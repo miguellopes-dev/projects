@@ -6,11 +6,12 @@ main{
     background-image: url(../img/hero.png),url(../img/hero_background.jpg) ; 
     background-size: 70vh, cover;   
     background-repeat: no-repeat;
-    background-position: bottom,center;
+    background-position: bottom left calc(50% + 160px),center;
     display: flex;
     justify-content: center;
     align-items: center;    
     z-index: 100;
+    column-gap: 330px;
 }
 
 main .main-intro h1{
@@ -33,25 +34,25 @@ main a {
 }
 
 main .main-quotes p{
-    border-left: 4px solid var(--site-color-01);
+    border-left: 2px solid var(--site-color-01);
     padding-left: 10px;
     margin: 40px 0;
 }
 
+main a:hover{
+    background-color: var(--site-color-01-hover);
+}
+
 main .main-quotes p:nth-child(2){
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
-main .main-intro{
-    position: relative;
-    right: 40vh;
-    padding-bottom: 8vh;
+main .main-intro{    
+    padding-bottom: 6vh;
 }
 
-main .main-quotes{
-    position: relative;
-    left: 1vh;
-    padding-bottom: 8vh;
+main .main-quotes{    
+    padding-bottom: 6vh;
 }
 
 /* CATEGORY SECTION */
@@ -121,4 +122,81 @@ main .main-quotes{
     text-align: center;
     text-shadow: -2px 2px 4px #000;
     z-index: 100;
+}
+
+/* ABOUT SECTION */
+
+.index-about{
+    width: 100%;
+    padding: 60px 0;
+    background-color: rgb(160, 160, 0);
+}
+
+.index-about-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.index-about-img img{
+    width: 300px;
+    border-radius: 500px;
+}
+
+.index-about-text{
+    flex-basis: 455px;
+}
+
+.index-about-text p{
+    padding: 20px 0;
+}
+
+.index-about-text a{
+    margin-top: 30px;
+    font-size: 18px;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background-color: var(--site-color-01);
+    padding:0px 20px;
+    width: fit-content;
+}
+
+.index-about-text a:hover{
+    background-color: var(--site-color-01-hover);
+}
+
+.index-about-skill{
+    flex-basis: 350px;
+}
+
+.index-about-skill-bar{
+    width: 100%;
+    height: 20px;
+    border: 4px solid #000;
+}
+
+.index-about-skill-bar-fill{
+    height: 100%;
+    background-color: var(--site-color-01);    
+}
+
+.htmlcss{
+    width: 95%;
+}
+.js{
+    width: 80%;
+}
+.analog{
+    width: 55%;
+}
+.htmlcss1{
+    width: 95%;
+}
+.htmlcss2{
+    width: 75%;
+}
+.htmlcss3{
+    width: 95%;
 }
