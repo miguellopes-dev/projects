@@ -15,8 +15,9 @@ main{
 }
 
 main .main-intro h1{
-    font-size: 96px;
-    line-height: 106px;
+    font-size: 90px;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 main p {
@@ -199,4 +200,40 @@ main .main-quotes{
 }
 .htmlcss3{
     width: 95%;
+}
+
+/*MOBILE VERSION*/
+
+@media only screen and (max-width:600px) {
+    
+    main{        
+        align-items: flex-end;            
+    }
+
+    main .main-intro{
+        padding-bottom: 8vh;
+    }
+    
+    main .main-intro h1{
+        font-size: 60px;
+        line-height: 1.25;
+        text-align: center;
+    }
+    
+    main p {
+        text-align: center;
+        padding: 0 10px;
+        font-size: 25px;
+        line-height: 1.75;
+    }
+    
+    main a {
+        margin: 30px auto;
+    }   
+    
+    main .main-quotes {
+        display: none;
+    }
+
+    
 }
